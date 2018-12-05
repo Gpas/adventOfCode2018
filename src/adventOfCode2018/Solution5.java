@@ -1,13 +1,15 @@
+package adventOfCode2018;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.function.BinaryOperator;
 import java.util.stream.Stream;
 
-public class Solution {
+public class Solution5 {
 	
 	public static void main (String[] args) {
-		  String fileName = "day_5/input/input.txt";
+		  String fileName = "input/input5.txt";
 		    try(Stream<String> stream = Files.lines(Paths.get(fileName))) {
 		    	String input = stream.findFirst().get();
 		    	Stream<String> stringStream = input.codePoints()
